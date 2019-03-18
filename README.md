@@ -24,7 +24,7 @@ for y in teaserli:
 # Idee 2
 Hier bekomme ich zwar nur den Text aber neun mal den gleichen der ersten Gäste.
 
-python```
+```python
 gast = content.find_all('div', class_= "teaser")
 for x in gast: 
 	x = content.find('p', class_= "teasertext").get_text()
