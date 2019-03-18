@@ -12,13 +12,13 @@ content = BeautifulSoup(response.content, "html.parser")
 
 #Hier tu ich den Inhalte eines jeden <div class="teaser"> in eine Liste, 
 #loope da durch und gucke, was davon den <a> tag hat. Klappt aber überhaupt nicht die Idee. 
-#teaser = content.find_all('div', class_= "teaser") 
-#teaserli = []
-#for x in teaser:
-#	teaserli.append(x)
-	#print(teaserli)
-#for y in teaserli:
-#	if y == "a":
+teaser = content.find_all('div', class_= "teaser") 
+teaserli = []
+for x in teaser:
+	teaserli.append(x)
+	print(teaserli)
+for y in teaserli:
+	if y == "a":
 		#print(y)
 
 
