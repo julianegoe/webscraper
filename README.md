@@ -10,6 +10,7 @@ Es folgen verschiedene Ideen wie ich an den Text der Gäste komme. In den <div> 
 Hier füge ich den Inhalte eines jeden <div class="teaser"> einer Liste hinzu, 
 loope da durch und gucke, was davon den <a> tag hat. Klappt aber überhaupt nicht die Idee. 
 
+```python
 teaser = content.find_all('div', class_= "teaser") 
 teaserli = []
 for x in teaser:
@@ -18,11 +19,14 @@ for x in teaser:
 for y in teaserli:
 	if y == "a":
 		print(y)
+```
 
 # Idee 2
 Hier bekomme ich zwar nur den Text aber neun mal den gleichen der ersten Gäste.
 
+python```
 gast = content.find_all('div', class_= "teaser")
 for x in gast: 
 	x = content.find('p', class_= "teasertext").get_text()
 	print(x)
+```
