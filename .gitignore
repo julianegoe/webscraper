@@ -104,3 +104,11 @@ venv.bak/
 .mypy_cache/
 
 Pipfile
+.idea/encodings.xml
+        .idea/misc.xml
+        .idea/modules.xml
+        .idea/webscraper.iml
+        .idea/workspace.xml
+        twitterData.json
+        webs.py
+        willData.json
